@@ -16,7 +16,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
 
-      @media (min-width: 376px) and (max-width: 1440px) {
+      @media (min-width: 375px) and (max-width: 1440px) {
         * {
           padding: 0px;
           margin: 0px;
@@ -26,12 +26,18 @@
           background-color: hsl(212, 45%, 89%);
         }
 
+        #center{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
         .qrbody {
           background-color: hsl(0, 0%, 100%);
           width: 280px;
-          margin: 80px auto 0px auto;
           border-radius: 20px;
-          padding: 15px;
+          padding: 20px;
         }
 
         img {
@@ -41,7 +47,6 @@
 
         .qrbody > div:nth-child(1) {
           margin-bottom: 15px;
-          text-align: center;
         }
 
         .qrbody > div:nth-child(2) {
@@ -50,16 +55,18 @@
           margin-bottom: 15px;
           font-family: "Outfit", sans-serif;
           color: hsl(218, 44%, 22%);
-          font-size: 23px;
-          text-shadow: 0px 1px, 1px 0px, 1px 0px, 1px 0px;
+          font-size: 20px;
+          width: 100%;
+          text-shadow: 0px 1px;
         }
 
         .qrbody > div:nth-child(3) {
-          font-weight: 700;
+          font-weight: 400;
           text-align: center;
-          margin-bottom: 25px;
+          margin-bottom: 20px;
           font-family: "Outfit", sans-serif;
           color: hsl(220, 15%, 55%);
+          width: 100%;
           font-size: 15px;
         }
 
@@ -72,23 +79,25 @@
     </style>
   </head>
   <body>
-    <div class="qrbody">
-      <div>
-        <img src="./images/image-qr-code.png" alt="qr-code image" />
-      </div>
-      <div>
-        Improve your front-end <br />
-        skills by building projects
-      </div>
-      <div>
-        Scan the QR code to visit Frontend <br />
-        Mentors and take your coding skills to <br />
-        the next level
-      </div>
+    <div id="center">
+      <div class="qrbody">
+        <div>
+          <img src="./images/image-qr-code.png" alt="qr-code image" />
+        </div>
+        <div>
+          Improve your front-end <br />
+          skills by building projects
+        </div>
+        <div>
+          Scan the QR code to visit Frontend <br />
+          Mentors and take your coding skills to <br />
+          the next level
+        </div>
       </div>
       <div class="attribute">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentors</a>. Coded by <a
           href="#">Adams Abdulsamad Sadiq</a>.
+      </div>
     </div>
   </body>
 </html>
